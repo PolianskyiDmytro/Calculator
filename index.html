@@ -12,34 +12,29 @@
   <main>
     <form action="" method="post">
       <div class="container">
-        <div class="output">
-          <output class="otuput-item">
 
-          </output>
-        </div>
+        <input id="display" readonly>
+
         <div class="buttons-panel">
-          <div class="buttons-numbers">
-            <button class="number" action="button">1</button>
-            <button class="number" action="button">2</button>
-            <button class="number" action="button">3</button>
-            <button class="number" action="button">4</button>
-            <button class="number" action="button">5</button>
-            <button class="number" action="button">6</button>
-            <button class="number" action="button">7</button>
-            <button class="number" action="button">8</button>
-            <button class="number" action="button">9</button>
-            <button class="number" action="button">0</button>
-            <button class="number" action="button">,</button>
-          </div>
+          <button class="number" action="button" onclick="AddToDisplay('1')">1</button>
+          <button class="number" action="button" onclick="AddToDisplay('2')">2</button>
+          <button class="number" action="button" onclick="AddToDisplay('3')">3</button>
+          <button class="number" action="button" onclick="AddToDisplay('4')">4</button>
+          <button class="number" action="button" onclick="AddToDisplay('5')">5</button>
+          <button class="number" action="button" onclick="AddToDisplay('6')">6</button>
+          <button class="number" action="button" onclick="AddToDisplay('7')">7</button>
+          <button class="number" action="button" onclick="AddToDisplay('8')">8</button>
+          <button class="number" action="button" onclick="AddToDisplay('9')">9</button>
+          <button class="number" action="button" onclick="AddToDisplay('0')">0</button>
+          <button class="number" action="button" onclick="AddToDisplay('.')">.</button>
+
           <div class="buttons-actions">
-            <!-- TODO: look for the appropriate symbols -->
-            <button class="action" action="button">Видалити цифру</button>
-            <button class="action" action="button">%</button>
-            <button class="action" action="button">&#x00F7;</button>
-            <button class="action" action="button">&#xd7;</button>
-            <button class="action" action="button">-</button>
-            <button class="action" action="button">+</button>
-            <button class="action" action="button">=</button>
+            <button class="action" action="button" onclick="clearDisplay()">C</button>
+            <button class="action" action="button" onclick="AddToDisplay('/')">&#x00F7;</button>
+            <button class="action" action="button" onclick="AddToDisplay('*')">&#xd7;</button>
+            <button class="action" action="button" onclick="AddToDisplay('-')">-</button>
+            <button class="action" action="button" onclick="AddToDisplay('+')">+</button>
+            <button class="action" action="button" onclick="calculate()">=</button>
           </div>
         </div>
       </div>
