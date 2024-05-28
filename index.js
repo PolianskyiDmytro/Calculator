@@ -37,7 +37,8 @@ function addToDisplay(input){
 }
 
 function clearDisplay(){
-
+  display.value = display.value.slice(0, -1);
+  event.preventDefault();
 }
 
 function calculate(){
