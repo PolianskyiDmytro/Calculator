@@ -41,7 +41,7 @@ function addToDisplay(input) {
   event.preventDefault();
 }
 
-function clearDisplay() {
+function deleteSymbol() {
   if (display.value[display.value.length - 1] === '.') {
     dotSwitch = true;
   }
@@ -50,6 +50,11 @@ function clearDisplay() {
     event.preventDefault()
   }
   display.value = display.value.slice(0, -1);
+  event.preventDefault();
+}
+
+function allClear() {
+  display.value = "";
   event.preventDefault();
 }
 
