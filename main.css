@@ -1,0 +1,68 @@
+:root {
+    --buttons-color: #B2DAFF;
+}
+
+body {
+    margin: 0;
+}
+
+.calculator-blu {
+    margin: 40px auto;
+    width: 375px;
+        height: 812px;
+        position: relative;
+        background: linear-gradient( rgb(240, 247, 255), rgb(207, 229, 254)); 
+        border-radius: 39px;
+        overflow: hidden;
+        border: none;
+}
+
+.calc-screen {
+    width: 300px;
+    height: 360px;
+    margin: 10px 0 0 28px;
+    display: grid;
+    justify-items: end;
+    align-items: end;
+}
+.calc-screen output {
+    font-size: 40px;
+
+}
+
+.buttons {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   justify-content: start;
+    padding: 20px 0 0 26px;
+}
+.buttons button{
+    width: 62px;
+    height: 62px;
+    background: var(--buttons-color);
+    border: none;
+    border-radius: 20%;
+    cursor: pointer;
+    user-select: none;
+    font-size: 32px;
+    text-align: center;
+    color: #3994ea;
+}
+.buttons button :hover {
+    background: #d5e0ea;
+}
+
+.buttons button :active {
+    background: #3994ea;
+}
+
+.buttons .zero {
+    width: 145px;
+    border-radius: 16px;
+}
+.buttons  .equal {
+    height: 145px;
+   transform: translate(0px, -82px);
+   border-radius: 16px;
+}

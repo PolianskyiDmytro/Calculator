@@ -1,47 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./main.css">
   <title>Calculator</title>
 </head>
+
 <body>
   <main>
-    <form action="" method="post">
-      <div class="container">
-
-        <input id="display" readonly>
-
-        <div class="buttons-panel">
-          <button class="number" onclick="addToDisplay('1')">1</button>
-          <button class="number" onclick="addToDisplay('2')">2</button>
-          <button class="number" onclick="addToDisplay('3')">3</button>
-          <button class="number" onclick="addToDisplay('4')">4</button>
-          <button class="number" onclick="addToDisplay('5')">5</button>
-          <button class="number" onclick="addToDisplay('6')">6</button>
-          <button class="number" onclick="addToDisplay('7')">7</button>
-          <button class="number" onclick="addToDisplay('8')">8</button>
-          <button class="number" onclick="addToDisplay('9')">9</button>
-          <button class="number" onclick="addToDisplay('0')">0</button>
-          <button class="number" onclick="addToDisplay('.')">.</button>
-
-          <div class="buttons-actions">
-            <button class="action" onclick="allClear()">AC</button>
-            <button class="action" onclick="deleteSymbol()">BS</button>
-            <button class="action" onclick="addToDisplay('/')">&#x00F7;</button>
-            <button class="action" onclick="addToDisplay('*')">&#xd7;</button>
-            <button class="action" onclick="addToDisplay('-')">-</button>
-            <button class="action" onclick="addToDisplay('+')">+</button>
-            <button class="action" onclick="calculate()">=</button>
-          </div>
-        </div>
+    <div class="calculator-blu">
+      <div class="calc-screen">
+        <output id="display" readonly></output>
       </div>
-    </form>
+      <div class="buttons">
+        <button class=" action refresh" action="button" onclick="allClear()">A/C</button>
+        <button class="action delete" action="button" onclick="deleteSymbol()"> <svg width="50px" height="50px"
+            viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+            <g fill="none" fill-rule="evenodd" stroke="#3994ea" stroke-linecap="round" stroke-linejoin="round"
+              transform="matrix(0 -1 1 0 2.5 15.5)">
+              <path
+                d="m0 5.82842712v7.17157288c0 1.1045695.8954305 2 2 2h6c1.1045695 0 2-.8954305 2-2v-7.17157288c0-.53043297-.21071368-1.0391408-.58578644-1.41421356l-3.70710678-3.70710678c-.39052429-.39052429-1.02368927-.39052429-1.41421356 0l-3.70710678 3.70710678c-.37507276.37507276-.58578644.88378059-.58578644 1.41421356z" />
+              <g transform="matrix(0 1 -1 0 14 4)">
+                <path d="m3 11 4-4" />
+                <path d="m3 7 4 4" />
+              </g>
+            </g>
+          </svg> </button>
+        <button class="action devision" action="button" onclick="addToDisplay('/')">&#x00F7;</button>
+        <button class="action myltiply" action="button" onclick="addToDisplay('*')">&#xd7;</button>
+        <button class="number seven" action="button" onclick="addToDisplay('7')">7</button>
+        <button class="number eight" action="button" onclick="addToDisplay('8')">8</button>
+        <button class="number nine" action="button" onclick="addToDisplay('9')">9</button>
+        <button class="action minus" action="button" onclick="addToDisplay('-')">-</button>
+        <button class="number four" action="button" onclick="addToDisplay('4')">4</button>
+        <button class="number five" action="button" onclick="addToDisplay('5')">5</button>
+        <button class="number six" action="button" onclick="addToDisplay('6')">6</button>
+        <button class="action plus" action="button" onclick="addToDisplay('+')">+</button>
+        <button class="number one" action="button" onclick="addToDisplay('1')">1</button>
+        <button class="number two" action="button" onclick="addToDisplay('2')">2</button>
+        <button class="number three" action="button" onclick="addToDisplay('3')">3</button>
+        <button class="number zero" action="button" onclick="addToDisplay('0')">0</button>
+        <button class="number dot" action="button" onclick="addToDisplay('.')">,</button>
+        <button class="action equal" action="button" onclick="calculate()">=</button>
+      </div>
+    </div>
   </main>
-  <footer>
-
-  </footer>
   <script src="index.js"></script>
 </body>
+
 </html>
