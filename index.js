@@ -64,7 +64,7 @@ function calculate() {
     event.preventDefault();
   }
   catch(error){
-    display.value = "Error";
+    alert("Error, finish the expression");
     event.preventDefault();
   }
 }
