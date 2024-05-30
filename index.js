@@ -21,16 +21,21 @@ function addToDisplay(input) {
     return
   }
 
+  if ('+-*/'.includes(display.value[display.value.length - 1])){
+    event.preventDefault();
+    dotSwitch = true;
+  }
+
   if (display.value.includes('.') && input === '.') {
     event.preventDefault();
     return
   }
 
-  if ((display.value.includes('-') || display.value.includes('+') || display.value.includes('*') || display.value.includes('/'))
+  /*if ((display.value.includes('-') || display.value.includes('+') || display.value.includes('*') || display.value.includes('/'))
     && (input === '-' || input === '+' || input === '*' || input === '/')) {
     event.preventDefault();
     return
-  }
+  }*/
 
   display.value += input;
   event.preventDefault();
